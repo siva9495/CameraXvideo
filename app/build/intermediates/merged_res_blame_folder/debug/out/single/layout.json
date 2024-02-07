@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-47:/layout/video_quality_item.xml",
+        "source": "com.example.android.camerax.video.app-main-50:/layout/video_quality_item.xml"
+    },
+    {
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-47:/layout/fragment_video_viewer.xml",
+        "source": "com.example.android.camerax.video.app-main-50:/layout/fragment_video_viewer.xml"
+    },
+    {
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-47:/layout/fragment_capture.xml",
+        "source": "com.example.android.camerax.video.app-main-50:/layout/fragment_capture.xml"
+    },
+    {
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "com.example.android.camerax.video.app-main-50:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-47:/layout/fragment_permission.xml",
+        "source": "com.example.android.camerax.video.app-main-50:/layout/fragment_permission.xml"
+    }
+]

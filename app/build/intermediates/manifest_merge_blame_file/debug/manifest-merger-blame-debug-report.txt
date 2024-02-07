@@ -1,0 +1,253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2020 The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     https://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.android.example.camerax.video"
+19    android:versionCode="1"
+20    android:versionName="1.0.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="21"
+24        android:targetSdkVersion="31" />
+25
+26    <!-- Permission declarations -->
+27    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+27-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:21:5-75
+27-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:21:22-73
+28    <uses-permission android:name="android.permission.INTERNET" />
+28-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:22:5-66
+28-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:22:22-64
+29    <uses-permission android:name="android.permission.CAMERA" />
+29-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:23:5-65
+29-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:23:22-62
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+30-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:24:5-71
+30-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:24:22-68
+31    <uses-permission
+31-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:25:5-26:38
+32        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+32-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:25:22-78
+33        android:maxSdkVersion="28" />
+33-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:26:9-35
+34
+35    <!-- A camera with burst capability is required to use this application -->
+36    <uses-feature android:name="android.hardware.camera.any" />
+36-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:29:5-64
+36-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:29:19-61
+37
+38    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+39    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+40    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+40-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:22:5-79
+40-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:22:22-76
+41
+42    <application
+42-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:31:5-63:19
+43        android:name="com.example.android.camerax.video.MainApplication"
+43-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:32:9-40
+44        android:allowBackup="true"
+44-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:33:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.7.0] C:\Users\DELL\.gradle\caches\transforms-3\9d90aaa0ef15e7d6fb2b5a8ab7103e71\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="true"
+48        android:icon="@drawable/ic_launcher"
+48-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:35:9-45
+49        android:label="@string/app_name"
+49-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:34:9-41
+50        android:testOnly="true" >
+51        <activity
+51-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:38:9-50:20
+52            android:name="com.example.android.camerax.video.MainActivity"
+52-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:39:13-74
+53            android:clearTaskOnLaunch="true"
+53-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:40:13-45
+54            android:exported="true"
+54-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:42:13-36
+55            android:theme="@style/AppTheme" >
+55-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:41:13-44
+56
+57            <!-- Main app intent filter -->
+58            <intent-filter>
+58-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:45:13-48:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:46:17-69
+59-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:46:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:47:17-77
+61-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:47:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <!-- FileProvider used to share media with other apps -->
+66        <provider
+67            android:name="androidx.core.content.FileProvider"
+67-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:54:13-62
+68            android:authorities="com.android.example.camerax.video.provider"
+68-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:55:13-60
+69            android:exported="false"
+69-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:56:13-37
+70            android:grantUriPermissions="true" >
+70-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:57:13-47
+71            <meta-data
+71-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:58:13-60:53
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:59:17-67
+73                android:resource="@xml/file_paths" />
+73-->C:\Users\DELL\AndroidStudioProjects\CameraXVideo\app\src\main\AndroidManifest.xml:60:17-51
+74        </provider>
+75
+76        <service
+76-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:27:13-84
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:28:13-37
+80            <meta-data
+80-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+81                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+81-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+84-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-database:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\b061daac3842bb4cefc42a32bb54b23e\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+87                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+87-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+90                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+90-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\DELL\.gradle\caches\transforms-3\4a775635ae37d0f03a6093625bd264a8\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:25:13-27:85
+93                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+93-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:26:17-120
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:27:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:28:13-30:85
+96                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+96-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:29:17-117
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-appcheck:17.1.0] C:\Users\DELL\.gradle\caches\transforms-3\75ee8136eeeafb023907b5fcb6a198d5\transformed\jetified-firebase-appcheck-17.1.0\AndroidManifest.xml:30:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\6992ae83b8ccd87a2f23b0e140e7c2e6\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+99                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+99-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\6992ae83b8ccd87a2f23b0e140e7c2e6\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\6992ae83b8ccd87a2f23b0e140e7c2e6\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+102                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+102-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+104        </service>
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\53adf4809253cd5c48f1edaedea30aa3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\53adf4809253cd5c48f1edaedea30aa3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\53adf4809253cd5c48f1edaedea30aa3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\53adf4809253cd5c48f1edaedea30aa3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+110
+111        <provider
+111-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+112            android:name="com.google.firebase.provider.FirebaseInitProvider"
+112-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+113            android:authorities="com.android.example.camerax.video.firebaseinitprovider"
+113-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+114            android:directBootAware="true"
+114-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+115            android:exported="false"
+115-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+116            android:initOrder="100" />
+116-->[com.google.firebase:firebase-common:20.4.2] C:\Users\DELL\.gradle\caches\transforms-3\32891e2fb81ddf752580430f8ba80358\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+117
+118        <uses-library
+118-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:25:9-27:40
+119            android:name="androidx.window.extensions"
+119-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:26:13-54
+120            android:required="false" />
+120-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:27:13-37
+121        <uses-library
+121-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:28:9-30:40
+122            android:name="androidx.window.sidecar"
+122-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:29:13-51
+123            android:required="false" />
+123-->[androidx.window:window:1.0.0-rc01] C:\Users\DELL\.gradle\caches\transforms-3\580e2dc8ddcbf11ff5c3e3bf668a64ed\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:30:13-37
+124
+125        <meta-data
+125-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\1cd99b5c0f3abd3126b1f2db1dbcf5aa\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+126            android:name="com.google.android.gms.version"
+126-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\1cd99b5c0f3abd3126b1f2db1dbcf5aa\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+127            android:value="@integer/google_play_services_version" />
+127-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\1cd99b5c0f3abd3126b1f2db1dbcf5aa\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+128
+129        <service
+129-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:26:9-35:19
+130            android:name="androidx.camera.core.impl.MetadataHolderService"
+130-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:27:13-75
+131            android:enabled="false"
+131-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:28:13-36
+132            android:exported="false" >
+132-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:29:13-37
+133            <meta-data
+133-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:32:13-34:89
+134                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+134-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:33:17-103
+135                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+135-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\DELL\.gradle\caches\transforms-3\053a6f1112b36d1d8e35b596bb90ad2f\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:34:17-86
+136        </service>
+137
+138        <provider
+138-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+139            android:name="androidx.startup.InitializationProvider"
+139-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+140            android:authorities="com.android.example.camerax.video.androidx-startup"
+140-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+141            android:exported="false" >
+141-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+142            <meta-data
+142-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+143                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+143-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+144                android:value="androidx.startup" />
+144-->[androidx.emoji2:emoji2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-3\50612a77f104a4477202c78b26088b4d\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+145            <meta-data
+145-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\DELL\.gradle\caches\transforms-3\39d944b688b9a43fc92011d8f266e56b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+146                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+146-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\DELL\.gradle\caches\transforms-3\39d944b688b9a43fc92011d8f266e56b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+147                android:value="androidx.startup" />
+147-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\DELL\.gradle\caches\transforms-3\39d944b688b9a43fc92011d8f266e56b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+148        </provider>
+149    </application>
+150
+151</manifest>
