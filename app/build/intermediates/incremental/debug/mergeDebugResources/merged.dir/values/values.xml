@@ -1273,19 +1273,17 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="default_web_client_id" translatable="false">723227849371-ovlfo6t3me2qfqf2i4ch66fkcsbcndlf.apps.googleusercontent.com</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="firebase_database_url" translatable="false">https://streetdine-28b6e-default-rtdb.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">723227849371</string>
-    <string name="google_api_key" translatable="false">AIzaSyB1ZZQA4EwwCnKGyo95ksEIoyJaMFNtmLc</string>
-    <string name="google_app_id" translatable="false">1:723227849371:android:30975c1112b59c4fcecc3e</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB1ZZQA4EwwCnKGyo95ksEIoyJaMFNtmLc</string>
-    <string name="google_storage_bucket" translatable="false">streetdine-28b6e.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">498851062903</string>
+    <string name="google_api_key" translatable="false">AIzaSyBHF2IZ4-nV43ocHf9FHjfexYnQbFsC-jU</string>
+    <string name="google_app_id" translatable="false">1:498851062903:android:dc8f5f8d40b2e52961d272</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBHF2IZ4-nV43ocHf9FHjfexYnQbFsC-jU</string>
+    <string name="google_storage_bucket" translatable="false">cameraxvideo-b127b.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="item_view_role_description">Tab</string>
@@ -1352,7 +1350,7 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="pause">Pause</string>
-    <string name="project_id" translatable="false">streetdine-28b6e</string>
+    <string name="project_id" translatable="false">cameraxvideo-b127b</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stop">Stop</string>
